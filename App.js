@@ -4,7 +4,11 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <View style={styles.containerCard}>
+        <View style={styles.header}>
+          <Text>COVID-19: Live map</Text>
+        </View>
+      </View>
     </View>
   );
 }
@@ -12,8 +16,13 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignSelf: 'stretch',
+    backgroundColor: '#2c3e50',
+    // alignItems: 'center',
+    // justifyContent: 'center',
   },
+  containerCard: {
+    backgroundColor: '#ecf0f1',
+  },
+
 });
