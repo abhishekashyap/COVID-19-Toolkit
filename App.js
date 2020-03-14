@@ -1,13 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Header from './components/Header';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.containerCard}>
-        <View style={styles.header}>
-          <Text>COVID-19: Live map</Text>
-        </View>
+        {/* Header */}
+        <Header />
       </View>
     </View>
   );
@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignSelf: 'stretch',
-    backgroundColor: '#2c3e50',
+    backgroundColor: '#ecf0f1',
     // alignItems: 'center',
     // justifyContent: 'center',
   },
