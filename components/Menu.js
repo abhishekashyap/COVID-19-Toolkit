@@ -25,17 +25,20 @@ export default function Menu() {
 
 const styles = StyleSheet.create({
     container: {
-        height: 500,
+        // height: 500,
         backgroundColor: '#fff'
     },
     itemTitle: {
+        fontSize: 25,
+        padding: 10,
         color: '#fff'
     },
     menuItem: {
         height: 80,
         marginHorizontal: 20,
         marginVertical: 10,
-        borderRadius: 10
+        borderRadius: 10,
+        justifyContent: 'center',
     },
     menuItem1: {
         backgroundColor: '#1ABC9C'

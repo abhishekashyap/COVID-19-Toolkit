@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     // alignSelf: 'stretch',
-    backgroundColor: '#e67e22', // For debug
+    backgroundColor: '#fff', // For debug
   },
 
 });
