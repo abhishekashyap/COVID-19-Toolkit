@@ -1,14 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Header from './components/Header';
+import Menu from './components/Menu';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <View style={styles.containerCard}>
-        {/* Header */}
-        <Header />
-      </View>
+      <Header />
+      <Menu />
     </View>
   );
 }
@@ -16,13 +15,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignSelf: 'stretch',
-    backgroundColor: '#ecf0f1',
-    // alignItems: 'center',
-    // justifyContent: 'center',
-  },
-  containerCard: {
-    backgroundColor: '#ecf0f1',
+    // alignSelf: 'stretch',
+    backgroundColor: '#e67e22', // For debug
   },
 
 });

@@ -13,11 +13,11 @@ const styles = StyleSheet.create({
     header: {
         height: 80,
         paddingTop: 38,
-        backgroundColor: '#9b59b6'
+        backgroundColor: '#fff'
     },
     title: {
         textAlign: 'center',
         fontSize: 20,
-        color: '#fff',
+        color: '#4A4A4A',
     }
 })
