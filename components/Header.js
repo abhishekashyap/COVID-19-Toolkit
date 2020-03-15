@@ -4,7 +4,7 @@ import {StyleSheet, Text, View} from 'react-native';
 export default function Header() {
     return (
         <View style={styles.header}>
-            <Text style={styles.title}>COVID-19: Live Update</Text>
+            <Text style={styles.title}>COVID-19: Essential Toolkit</Text>
         </View>
     )
 }
