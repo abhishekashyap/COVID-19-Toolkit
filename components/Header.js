@@ -21,11 +21,12 @@ const styles = StyleSheet.create({
         textAlign: 'left',
         fontSize: 50,
         color: '#4A4A4A',
-        fontFamily: 'nunito-regular'
+        fontFamily: 'circular-std',
     },
     subtitle: {
         textAlign: 'left',
         fontSize: 20,
         color: '#4A4A4A',
+        fontFamily: 'circular-std-book'
     }
 })

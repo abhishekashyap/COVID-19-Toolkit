@@ -37,7 +37,7 @@ export default function Menu() {
 
 const styles = StyleSheet.create({
     container: {
-        // height: 500,
+        flex: 1,
         backgroundColor: '#fff'
     },
     menuItem: {
@@ -54,6 +54,7 @@ const styles = StyleSheet.create({
         fontSize: 25,
         paddingLeft: 15,
         color: '#fff',
+        fontFamily: 'circular-std-book'
     },
     icon: {
         height: 50,
