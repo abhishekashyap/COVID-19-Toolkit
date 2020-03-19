@@ -12,7 +12,13 @@ export default Navigator = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen
+          name="Home"
+          component={Home}
+          options={{
+            headerShown: false
+          }}
+        />
         <Stack.Screen name="Prevention" component={Prevention} />
       </Stack.Navigator>
     </NavigationContainer>
