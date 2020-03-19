@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
         textAlign: 'left',
         fontSize: 50,
         color: '#4A4A4A',
+        fontFamily: 'nunito-regular'
     },
     subtitle: {
         textAlign: 'left',
