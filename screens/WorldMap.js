@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, View, Text } from "react-native";
 import ViewHeader from "../components/ViewHeader";
-import ViewBody from "../components/ViewBody";
+import Map from "../components/Map";
 
 export default function WorldMap() {
   const contentList = [
@@ -13,15 +13,11 @@ export default function WorldMap() {
   return (
     <View style={styles.container}>
       <ViewHeader
-        title="Symptoms"
-        color="#e74c3c"
-        subtitle="People may be sick with the virus for 1 to 14 days before developing symptoms. The most common symptoms of coronavirus disease (COVID-19) are fever, tiredness, and dry cough. Most people (about 80%) recover from the disease without needing special treatment."
+        title="World Map"
+        color="#27ae60"
+        subtitle="Infected areas"
       />
-      <ViewBody
-        contentList={contentList}
-        listIcon="md-checkmark-circle"
-        listIconColor="green"
-      />
+      <Map/>
     </View>
   );
 }
