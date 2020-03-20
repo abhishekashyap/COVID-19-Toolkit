@@ -12,6 +12,7 @@ import Symptoms from "../screens/Symptoms";
 import HowItSpreads from "../screens/HowItSpreads";
 import Treatment from "../screens/Treatment";
 import WorldMap from "../screens/WorldMap";
+import About from "../screens/About";
 
 const Stack = createStackNavigator();
 
@@ -34,6 +35,7 @@ export default Navigator = () => {
         <Stack.Screen name="Treatment" component={Treatment} />
         <Stack.Screen name="HowItSpreads" component={HowItSpreads} />
         <Stack.Screen name="WorldMap" component={WorldMap} />
+        <Stack.Screen name="About" component={About} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import { Image, StyleSheet, Text, View, TouchableOpacity } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
 import Header from "../components/Header";
 
 // Global stylesheet import
@@ -51,6 +52,15 @@ export default function Home({ navigation }) {
             <Text style={[styles.itemTitle, globalStyles.text]}>World Map</Text>
           </View>
         </TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate("About")}>
+          <View style={styles.about}>
+            <Text style={[styles.aboutText, globalStyles.text]}>About</Text>
+            <Ionicons
+              name="ios-information-circle-outline"
+              style={styles.aboutIcon}
+            />
+          </View>
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -94,5 +104,18 @@ const styles = StyleSheet.create({
   },
   menuItem5: {
     backgroundColor: "#2ECC71"
+  },
+  about: {
+    marginTop: 8,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center"
+  },
+  aboutText: {
+    fontSize: 15
+  },
+  aboutIcon: {
+    color: "#333",
+    marginLeft: 5
   }
 });
