@@ -1,11 +1,21 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, FlatList } from "react-native";
 import { globalStyles } from "../styles/global";
+import { Ionicons } from "@expo/vector-icons";
 
 export default function ViewBody(props) {
   return (
     <View style={styles.bodyContainer}>
-      <Text style={[styles.content, globalStyles.text]}>{props.content}</Text>
+      <Text>"{props.head}"</Text>
+      <FlatList
+        data={props.contentList}
+        renderItem={({ item }) => (
+          <View style={styles.listContainer}>
+            <Ionicons name={props.listIcon} size={32} color={props.listIconColor} />
+            <Text style={[styles.item, globalStyles.text]}>{item.content}</Text>
+          </View>
+        )}
+      />
     </View>
   );
 }
@@ -16,5 +26,17 @@ const styles = StyleSheet.create({
     paddingVertical: 50,
     paddingHorizontal: 20,
     backgroundColor: "#fff"
+  },
+  listContainer: {
+    flexDirection: 'row',
+    alignItems: "center"
+  },
+  item: {
+    flex: 1,
+    fontSize: 20,
+    padding: 10,
+    margin: 10,
+    backgroundColor: "#ecf0f1",
+    borderRadius: 10
   }
 });
