@@ -25,19 +25,19 @@ export default function Home({ navigation }) {
             </Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate("")}>
+        <TouchableOpacity onPress={() => navigation.navigate("Symptoms")}>
           <View style={[styles.menuItem, styles.menuItem2]}>
             <Image source={Symptom} style={styles.icon} />
             <Text style={[styles.itemTitle, globalStyles.text]}>Symptoms</Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate("")}>
+        <TouchableOpacity onPress={() => navigation.navigate("Treatment")}>
           <View style={[styles.menuItem, styles.menuItem3]}>
             <Image source={Treatment} style={styles.icon} />
             <Text style={[styles.itemTitle, globalStyles.text]}>Treatment</Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate("")}>
+        <TouchableOpacity onPress={() => navigation.navigate("HowItSpreads")}>
           <View style={[styles.menuItem, styles.menuItem4]}>
             <Image source={HowItSpreads} style={styles.icon} />
             <Text style={[styles.itemTitle, globalStyles.text]}>
@@ -45,7 +45,7 @@ export default function Home({ navigation }) {
             </Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate("")}>
+        <TouchableOpacity onPress={() => navigation.navigate("WorldMap")}>
           <View style={[styles.menuItem, styles.menuItem5]}>
             <Image source={WorldMap} style={styles.icon} />
             <Text style={[styles.itemTitle, globalStyles.text]}>World Map</Text>
