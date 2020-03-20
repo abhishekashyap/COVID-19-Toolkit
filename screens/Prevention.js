@@ -3,7 +3,7 @@ import { StyleSheet, View, Text } from "react-native";
 import ViewHeader from "../components/ViewHeader";
 import ViewBody from "../components/ViewBody";
 
-export default function App() {
+export default function Prevention() {
   const contentList = [
     { key: "1", content: "HANDS, Wash them often" },
     { key: "2", content: "ELBOW, Cough into it" },
@@ -13,9 +13,12 @@ export default function App() {
   ];
   return (
     <View style={styles.container}>
-      <ViewHeader title="Prevention" color="#16a085" />
+      <ViewHeader
+        title="Prevention"
+        color="#16a085"
+        subtitle="Prevention is better than cure"
+      />
       <ViewBody
-        footer="Prevention is better than cure"
         contentList={contentList}
         listIcon="md-checkmark-circle"
         listIconColor="green"

@@ -1,5 +1,12 @@
 import React from "react";
-import { Image, StyleSheet, Text, View, TouchableOpacity } from "react-native";
+import {
+  Image,
+  StyleSheet,
+  Text,
+  View,
+  TouchableOpacity,
+  ScrollView
+} from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import Header from "../components/Header";
 
@@ -9,60 +16,75 @@ import { globalStyles } from "../styles/global";
 // Icon imports
 import Prevention from "../assets/icons/prevention.png";
 import Symptom from "../assets/icons/symptom.png";
-import HowItSpreads from "../assets/icons/agreement.png";
+import MythBusters from "../assets/icons/agreement.png";
 import Treatment from "../assets/icons/hospital.png";
+import FAQ from "../assets/icons/question.png";
 import WorldMap from "../assets/icons/world.png";
 
 export default function Home({ navigation }) {
   return (
-    <View style={styles.container}>
-      <Header title="COVID-19" subtitle="Essential Toolkit" />
+    <ScrollView>
       <View style={styles.container}>
-        <TouchableOpacity onPress={() => navigation.navigate("Prevention")}>
-          <View style={[styles.menuItem, styles.menuItem1]}>
-            <Image source={Prevention} style={styles.icon} />
-            <Text style={[styles.itemTitle, globalStyles.text]}>
-              Prevention
-            </Text>
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate("Symptoms")}>
-          <View style={[styles.menuItem, styles.menuItem2]}>
-            <Image source={Symptom} style={styles.icon} />
-            <Text style={[styles.itemTitle, globalStyles.text]}>Symptoms</Text>
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate("Treatment")}>
-          <View style={[styles.menuItem, styles.menuItem3]}>
-            <Image source={Treatment} style={styles.icon} />
-            <Text style={[styles.itemTitle, globalStyles.text]}>Treatment</Text>
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate("HowItSpreads")}>
-          <View style={[styles.menuItem, styles.menuItem4]}>
-            <Image source={HowItSpreads} style={styles.icon} />
-            <Text style={[styles.itemTitle, globalStyles.text]}>
-              How it spreads
-            </Text>
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate("WorldMap")}>
-          <View style={[styles.menuItem, styles.menuItem5]}>
-            <Image source={WorldMap} style={styles.icon} />
-            <Text style={[styles.itemTitle, globalStyles.text]}>World Map</Text>
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate("About")}>
-          <View style={styles.about}>
-            <Text style={[styles.aboutText, globalStyles.text]}>About</Text>
-            <Ionicons
-              name="ios-information-circle-outline"
-              style={styles.aboutIcon}
-            />
-          </View>
-        </TouchableOpacity>
+        <Header title="COVID-19" subtitle="Essential Toolkit" />
+        <View style={styles.container}>
+          <TouchableOpacity onPress={() => navigation.navigate("Prevention")}>
+            <View style={[styles.menuItem, styles.menuItem1]}>
+              <Image source={Prevention} style={styles.icon} />
+              <Text style={[styles.itemTitle, globalStyles.text]}>
+                Prevention
+              </Text>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate("Symptoms")}>
+            <View style={[styles.menuItem, styles.menuItem2]}>
+              <Image source={Symptom} style={styles.icon} />
+              <Text style={[styles.itemTitle, globalStyles.text]}>
+                Symptoms
+              </Text>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate("Treatment")}>
+            <View style={[styles.menuItem, styles.menuItem3]}>
+              <Image source={Treatment} style={styles.icon} />
+              <Text style={[styles.itemTitle, globalStyles.text]}>
+                Treatment
+              </Text>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate("MythBusters")}>
+            <View style={[styles.menuItem, styles.menuItem4]}>
+              <Image source={MythBusters} style={styles.icon} />
+              <Text style={[styles.itemTitle, globalStyles.text]}>
+                Myth busters
+              </Text>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate("FAQ")}>
+            <View style={[styles.menuItem, styles.menuItem5]}>
+              <Image source={FAQ} style={styles.icon} />
+              <Text style={[styles.itemTitle, globalStyles.text]}>FAQ</Text>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate("WorldMap")}>
+            <View style={[styles.menuItem, styles.menuItem6]}>
+              <Image source={WorldMap} style={styles.icon} />
+              <Text style={[styles.itemTitle, globalStyles.text]}>
+                World Map
+              </Text>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate("About")}>
+            <View style={styles.about}>
+              <Text style={[styles.aboutText, globalStyles.text]}>About</Text>
+              <Ionicons
+                name="ios-information-circle-outline"
+                style={styles.aboutIcon}
+              />
+            </View>
+          </TouchableOpacity>
+        </View>
       </View>
-    </View>
+    </ScrollView>
   );
 }
 
@@ -103,10 +125,13 @@ const styles = StyleSheet.create({
     backgroundColor: "#9B59B6"
   },
   menuItem5: {
+    backgroundColor: "#B53471"
+  },
+  menuItem6: {
     backgroundColor: "#2ECC71"
   },
   about: {
-    marginTop: 8,
+    margin: 10,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center"

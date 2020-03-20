@@ -9,8 +9,9 @@ import {
 import Home from "../screens/Home";
 import Prevention from "../screens/Prevention";
 import Symptoms from "../screens/Symptoms";
-import HowItSpreads from "../screens/HowItSpreads";
+import MythBusters from "../screens/MythBusters";
 import Treatment from "../screens/Treatment";
+import FAQ from "../screens/FAQ";
 import WorldMap from "../screens/WorldMap";
 import About from "../screens/About";
 
@@ -33,7 +34,8 @@ export default Navigator = () => {
         <Stack.Screen name="Prevention" component={Prevention} />
         <Stack.Screen name="Symptoms" component={Symptoms} />
         <Stack.Screen name="Treatment" component={Treatment} />
-        <Stack.Screen name="HowItSpreads" component={HowItSpreads} />
+        <Stack.Screen name="MythBusters" component={MythBusters} />
+        <Stack.Screen name="FAQ" component={FAQ} />
         <Stack.Screen name="WorldMap" component={WorldMap} />
         <Stack.Screen name="About" component={About} />
       </Stack.Navigator>

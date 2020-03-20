@@ -6,6 +6,7 @@ import { Ionicons } from "@expo/vector-icons";
 export default function ViewBody(props) {
   return (
     <View style={styles.bodyContainer}>
+      <Text style={styles.header}>{props.header}</Text>
       <FlatList
         data={props.contentList}
         renderItem={({ item }) => (
@@ -19,25 +20,25 @@ export default function ViewBody(props) {
           </View>
         )}
       />
-      <Text style={styles.footer}>"{props.footer}"</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   bodyContainer: {
-    flex: 1,
+    // flex: 1,
     paddingVertical: 50,
     paddingHorizontal: 20,
     backgroundColor: "#fff"
   },
-  footer: {
+  header: {
     flex: 1,
     fontSize: 18,
     textAlign: "center",
     fontFamily: "circular-std"
   },
   listContainer: {
+    flex: 1,
     flexDirection: "row",
     alignItems: "center"
   },

@@ -3,11 +3,25 @@ import { StyleSheet, View, Text } from "react-native";
 import ViewHeader from "../components/ViewHeader";
 import ViewBody from "../components/ViewBody";
 
-export default function App() {
+export default function About() {
+  const contentList = [
+    { key: "1", content: "Cough" },
+    { key: "2", content: "Tiredness" },
+    { key: "3", content: "Fever" },
+    { key: "4", content: "Difficulty in breathing" }
+  ];
   return (
     <View style={styles.container}>
-      <ViewHeader title="About" color="#ff9f1a" />
-      <ViewBody content="Labore consectetur reprehenderit Lorem ut esse do. Amet ex aute veniam nostrud cillum id irure. Culpa duis in cillum veniam ullamco. Amet elit cupidatat cupidatat aute voluptate ullamco est aute ut nisi consectetur enim. Ut labore quis commodo excepteur reprehenderit." />
+      <ViewHeader
+        title="Symptoms"
+        color="#e74c3c"
+        subtitle="People may be sick with the virus for 1 to 14 days before developing symptoms. The most common symptoms of coronavirus disease (COVID-19) are fever, tiredness, and dry cough. Most people (about 80%) recover from the disease without needing special treatment."
+      />
+      <ViewBody
+        contentList={contentList}
+        listIcon="md-checkmark-circle"
+        listIconColor="green"
+      />
     </View>
   );
 }
