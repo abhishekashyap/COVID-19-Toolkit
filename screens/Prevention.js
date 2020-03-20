@@ -1,11 +1,11 @@
 import React from "react";
 import { StyleSheet, View, Text } from "react-native";
-import Header from "../components/Header";
+import ViewHeader from "../components/ViewHeader";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Header />
+      <ViewHeader title="Prevention" />
       <Text>Prevention page</Text>
     </View>
   );

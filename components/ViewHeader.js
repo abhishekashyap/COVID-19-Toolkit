@@ -5,8 +5,7 @@ import { globalStyles } from "../styles/global";
 export default function Header(props) {
   return (
     <View style={styles.header}>
-      <Text style={styles.title}>{props.title}</Text>
-      <Text style={[styles.subtitle, globalStyles.text]}>{props.subtitle}</Text>
+      <Text style={[styles.title, globalStyles.text]}>{props.title}</Text>
     </View>
   );
 }
@@ -19,13 +18,7 @@ const styles = StyleSheet.create({
   },
   title: {
     textAlign: "left",
-    fontSize: 50,
+    fontSize: 40,
     color: "#4A4A4A",
-    fontFamily: "circular-std"
-  },
-  subtitle: {
-    textAlign: "left",
-    fontSize: 18,
-    color: "#4A4A4A"
   }
 });

@@ -15,7 +15,7 @@ import WorldMap from "../assets/icons/world.png";
 export default function Home({ navigation }) {
   return (
     <View style={styles.container}>
-      <Header />
+      <Header title="COVID-19" subtitle="Essential Toolkit" />
       <View style={styles.container}>
         <TouchableOpacity onPress={() => navigation.navigate("Prevention")}>
           <View style={[styles.menuItem, styles.menuItem1]}>
