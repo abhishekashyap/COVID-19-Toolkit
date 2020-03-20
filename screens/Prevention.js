@@ -15,7 +15,7 @@ export default function App() {
     <View style={styles.container}>
       <ViewHeader title="Prevention" color="#16a085" />
       <ViewBody
-        head="Prevention is better than cure"
+        footer="Prevention is better than cure"
         contentList={contentList}
         listIcon="md-checkmark-circle"
         listIconColor="green"
