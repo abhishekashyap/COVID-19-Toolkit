@@ -38,18 +38,22 @@ export default function About() {
       />
       <View style={styles.sources}>
         <Text style={[styles.subtitle, globalStyles.text]}>Sources:</Text>
-        <Button
-          title="World Health Organization"
+        <FontAwesome.Button
+          name="external-link"
           color="#333"
           onPress={_handleOpenWHOWebBrowser}
           style={styles.button}
-        />
-        <Button
-          title="MIT Technology review"
+        >
+          World Health Organization
+        </FontAwesome.Button>
+        <FontAwesome.Button
+          name="external-link"
           color="#333"
           onPress={_handleOpenMITWebBrowser}
           style={styles.button}
-        />
+        >
+          MIT Technology review
+        </FontAwesome.Button>
       </View>
       <View style={styles.sources}>
         <Text style={[styles.subtitle, globalStyles.text]}>Contact:</Text>
