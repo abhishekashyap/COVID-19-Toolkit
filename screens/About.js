@@ -18,18 +18,16 @@ export default function About() {
   }
   async function _handleLinkedinWebBrowser() {
     await WebBrowser.openBrowserAsync(
-      "https://www.technologyreview.com/s/615330/best-worst-coronavirus-dashboards/"
+      "https://www.linkedin.com/in/abhishek-kashyap-86b01676/"
     );
   }
   async function _handleEmailWebBrowser() {
     await WebBrowser.openBrowserAsync(
-      "https://www.technologyreview.com/s/615330/best-worst-coronavirus-dashboards/"
+      "mailto:abhishek2089.cse18@chitkara.edu.in"
     );
   }
   async function _handleGithubWebBrowser() {
-    await WebBrowser.openBrowserAsync(
-      "https://www.technologyreview.com/s/615330/best-worst-coronavirus-dashboards/"
-    );
+    await WebBrowser.openBrowserAsync("https://github.com/abhishekashyap");
   }
   return (
     <View style={styles.container}>
