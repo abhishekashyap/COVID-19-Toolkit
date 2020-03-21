@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View, Text, Button } from "react-native";
+import { StyleSheet, View, Text } from "react-native";
 import * as WebBrowser from "expo-web-browser";
 import { FontAwesome } from "@expo/vector-icons";
 import ViewHeader from "../components/ViewHeader";
