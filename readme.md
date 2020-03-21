@@ -32,10 +32,10 @@ $ npm start
 
 ## Screenshots
 
-![Homepage](screenshots/mockups/Google-Pixel-3-1.png "Landing page 1")
-![Homepage](screenshots/mockups/Google-Pixel-3-2.png "Landing page 2")
-![WorldMap](screenshots/mockups/Google-Pixel-3-3.png "World Map")
-![Prevention](screenshots/mockups/Google-Pixel-3-4.png "Prevention page")
+![Homepage](screenshots/mockups/Google-Pixel-3-1.png =250px "Landing page 1")
+![Homepage](screenshots/mockups/Google-Pixel-3-2.png =250px "Landing page 2")
+![WorldMap](screenshots/mockups/Google-Pixel-3-3.png =250px "World Map")
+![Prevention](screenshots/mockups/Google-Pixel-3-4.png =250px "Prevention page")
 
 ## Downloads
 * [Releases](https://github.com/abhishekashyap/covid-19/releases)
