@@ -42,7 +42,7 @@ export default function About() {
           name="external-link"
           backgroundColor="#333"
           onPress={_handleOpenWHOWebBrowser}
-        style={styles.buttonSources}
+          style={styles.buttonSources}
         >
           World Health Organization
         </FontAwesome.Button>
@@ -70,7 +70,7 @@ export default function About() {
           backgroundColor="#333"
           onPress={_handleEmailWebBrowser}
           style={styles.buttonContacts}
-          >
+        >
           Email
         </FontAwesome.Button>
         <FontAwesome.Button
