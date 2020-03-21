@@ -8,7 +8,6 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "primaryColor": "#bdc3c7",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -20,8 +19,7 @@
     },
     "assetBundlePatterns": ["**/*"],
     "androidStatusBar": {
-      "barStyle": "light-content",
-      "backgroundColor": "#bdc3c7"
+      "barStyle": "light-content"
     },
     "androidNavigationBar": {
       "visible": true
