@@ -42,6 +42,7 @@ export default function About() {
           name="external-link"
           backgroundColor="#333"
           onPress={_handleOpenWHOWebBrowser}
+        style={styles.buttonSources}
         >
           World Health Organization
         </FontAwesome.Button>
@@ -49,6 +50,7 @@ export default function About() {
           name="external-link"
           backgroundColor="#333"
           onPress={_handleOpenMITWebBrowser}
+          style={styles.buttonSources}
         >
           MIT Technology review
         </FontAwesome.Button>
@@ -59,6 +61,7 @@ export default function About() {
           name="linkedin"
           backgroundColor="#333"
           onPress={_handleLinkedinWebBrowser}
+          style={styles.buttonContacts}
         >
           LinkedIn
         </FontAwesome.Button>
@@ -66,13 +69,15 @@ export default function About() {
           name="envelope-o"
           backgroundColor="#333"
           onPress={_handleEmailWebBrowser}
-        >
+          style={styles.buttonContacts}
+          >
           Email
         </FontAwesome.Button>
         <FontAwesome.Button
           name="github"
           backgroundColor="#333"
           onPress={_handleGithubWebBrowser}
+          style={styles.buttonContacts}
         >
           Github
         </FontAwesome.Button>
@@ -92,12 +97,17 @@ const styles = StyleSheet.create({
     justifyContent: "space-around",
     backgroundColor: "#ecf0f1",
     margin: 10,
-    borderRadius: 10
+    borderRadius: 10,
+    alignItems: "center"
   },
   subtitle: {
+    alignSelf: "flex-start",
     fontSize: 18
   },
-  button: {
-    textAlign: "center"
+  buttonSources: {
+    width: 220
+  },
+  buttonContacts: {
+    width: 100
   }
 });

@@ -1,25 +1,27 @@
 import React from "react";
-import { StyleSheet, Text, View, FlatList, ScrollView } from "react-native";
+import { StyleSheet, Text, View, FlatList } from "react-native";
 import { globalStyles } from "../styles/global";
 
 export default function ViewBody(props) {
   return (
-    <ScrollView>
-        <View style={styles.bodyContainer}>
-          <Text style={styles.header}>{props.header}</Text>
-          <FlatList
-            data={props.contentList}
-            renderItem={({ item }) => (
-              <View style={styles.listContainer}>
-                <View>
-            <Text style={[styles.question, globalStyles.text]}>{item.key}. {item.question}</Text>
-                    <Text style={[styles.answer, globalStyles.text]}>{item.answer}</Text>
-                </View>
-              </View>
-            )}
-          />
-        </View>
-    </ScrollView>
+    <View style={styles.bodyContainer}>
+      <Text style={styles.header}>{props.header}</Text>
+      <FlatList
+        data={props.contentList}
+        renderItem={({ item }) => (
+          <View style={styles.listContainer}>
+            <View>
+              <Text style={[styles.question, globalStyles.text]}>
+                {item.key}. {item.question}
+              </Text>
+              <Text style={[styles.answer, globalStyles.text]}>
+                {item.answer}
+              </Text>
+            </View>
+          </View>
+        )}
+      />
+    </View>
   );
 }
 
@@ -48,14 +50,14 @@ const styles = StyleSheet.create({
     flex: 1,
     fontSize: 18,
     padding: 10,
-    margin: 5,
+    margin: 5
   },
   answer: {
     flex: 1,
     fontSize: 16,
     padding: 10,
-    margin: 5,
-    backgroundColor: '#78e08f',
+    margin: 10,
+    backgroundColor: "#78e08f",
     borderRadius: 10
   }
 });
