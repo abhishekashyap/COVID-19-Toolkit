@@ -40,17 +40,15 @@ export default function About() {
         <Text style={[styles.subtitle, globalStyles.text]}>Sources:</Text>
         <FontAwesome.Button
           name="external-link"
-          color="#333"
+          backgroundColor="#333"
           onPress={_handleOpenWHOWebBrowser}
-          style={styles.button}
         >
           World Health Organization
         </FontAwesome.Button>
         <FontAwesome.Button
           name="external-link"
-          color="#333"
+          backgroundColor="#333"
           onPress={_handleOpenMITWebBrowser}
-          style={styles.button}
         >
           MIT Technology review
         </FontAwesome.Button>
@@ -59,17 +57,15 @@ export default function About() {
         <Text style={[styles.subtitle, globalStyles.text]}>Contact:</Text>
         <FontAwesome.Button
           name="linkedin"
-          color="#333"
+          backgroundColor="#333"
           onPress={_handleLinkedinWebBrowser}
-          style={styles.button}
         >
-          linkedin
+          LinkedIn
         </FontAwesome.Button>
         <FontAwesome.Button
           name="envelope-o"
           backgroundColor="#333"
           onPress={_handleEmailWebBrowser}
-          style={styles.button}
         >
           Email
         </FontAwesome.Button>
@@ -77,7 +73,6 @@ export default function About() {
           name="github"
           backgroundColor="#333"
           onPress={_handleGithubWebBrowser}
-          style={styles.button}
         >
           Github
         </FontAwesome.Button>
