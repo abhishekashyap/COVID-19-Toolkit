@@ -31,29 +31,32 @@ $ npm start
 ```
 
 ## Screenshots
-<img src="screenshots/mockups/Google-Pixel-3-1.png" alt="Homepage-1" width="200" margin="10"/><img src="screenshots/mockups/Google-Pixel-3-2.png" alt="Homepage-2" width="200" margin="10"/><img src="screenshots/mockups/Google-Pixel-3-3.png" alt="WorldMap" width="200" margin="10"/><img src="screenshots/mockups/Google-Pixel-3-4.png" alt="Prevention" width="200" margin="10"/>
+
+<img src="screenshots/mockups/Google-Pixel-3-1.png" alt="Homepage-1" width="200"/>&nbsp;&nbsp;<img src="screenshots/mockups/Google-Pixel-3-2.png" alt="Homepage-2" width="200"/>&nbsp;&nbsp;<img src="screenshots/mockups/Google-Pixel-3-3.png" alt="WorldMap" width="200"/>&nbsp;&nbsp;<img src="screenshots/mockups/Google-Pixel-3-4.png" alt="Prevention" width="200"/>
 
 ## Downloads
-* [Releases](https://github.com/abhishekashyap/covid-19/releases)
+
+- [Releases](https://github.com/abhishekashyap/covid-19/releases)
 
 ## Built With
 
-* [React Native](https://reactnative.dev/) - React Native is an open-source mobile application framework created by Facebook
-* [Expo](https://expo.io/) - Expo is a set of tools built around React Native
+- [React Native](https://reactnative.dev/) - React Native is an open-source mobile application framework created by Facebook
+- [Expo](https://expo.io/) - Expo is a set of tools built around React Native
 
 ## Coming soon
 
-* Live list updates
-* Live heatmap updates
+- Live list updates
+- Live heatmap updates
 
 ## Contributing
 
 Currently not accepting any contributions.
+
 <!-- Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us. -->
 
 ## Authors
 
-* **Abhishek Kashyap** - *Initial work* - [abhishekashyap](https://github.com/abhishekashyap)
+- **Abhishek Kashyap** - _Initial work_ - [abhishekashyap](https://github.com/abhishekashyap)
 
 ## License
 
