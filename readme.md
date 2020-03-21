@@ -31,7 +31,7 @@ $ npm start
 ```
 
 ## Screenshots
-<img src="screenshots/mockups/Google-Pixel-3-1.png" alt="Homepage-1" width="200"/><img src="screenshots/mockups/Google-Pixel-3-2.png" alt="Homepage-2" width="200"/><img src="screenshots/mockups/Google-Pixel-3-3.png" alt="WorldMap" width="200"/><img src="screenshots/mockups/Google-Pixel-3-4.png" alt="Prevention" width="200"/>
+<img src="screenshots/mockups/Google-Pixel-3-1.png" alt="Homepage-1" width="200" margin="10"/><img src="screenshots/mockups/Google-Pixel-3-2.png" alt="Homepage-2" width="200" margin="10"/><img src="screenshots/mockups/Google-Pixel-3-3.png" alt="WorldMap" width="200" margin="10"/><img src="screenshots/mockups/Google-Pixel-3-4.png" alt="Prevention" width="200" margin="10"/>
 
 ## Downloads
 * [Releases](https://github.com/abhishekashyap/covid-19/releases)
