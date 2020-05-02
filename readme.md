@@ -3,6 +3,7 @@
 # COVID -19
 
 An essential toolkit to fight COVID-19
+
 <a id="raw-url" href="https://github.com/abhishekashyap/COVID-19/releases/download/v1.0/covid-19-eb968ca153404b6689bb4e3abf81f1cd-signed.apk">Download for Android</a>
 
 ![GitHub All Releases](https://img.shields.io/github/downloads/abhishekashyap/COVID-19/total)
